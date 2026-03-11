@@ -408,10 +408,9 @@
             padding: 0; margin: 8px 0; border-radius: 10px;
             background: rgba(240, 244, 255, .9); transition: all .3s ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, .08); break-inside: avoid;
-            pointer-events: none;
         }
         .sa-slide ul li:hover { background: transparent; }
-        .sa-slide ul li:hover h3 { color: #c41e3a; }
+        
         .sa-slide ul li h3 { 
             margin: 0; font-size: 16px; color: #1a1a2e; font-weight: 600;
             transition: color .3s ease;
@@ -419,17 +418,20 @@
         .sa-slide ul li .zip-code { font-size: 13px; color: #555; margin-top: 6px; padding-left: 5px; }
         .sa-slide ul li a.town-link {
             display: block;
-            text-decoration: none;
-            color: inherit;
-            padding: 12px 15px;
+            text-decoration: underline;
+            color: #003087;
+            padding: 15px 20px;
             cursor: pointer;
             border-radius: 10px;
             position: relative;
             z-index: 10;
             pointer-events: auto;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
         }
-        .sa-slide ul li a.town-link:hover { background: rgba(0,48,135,0.1); }
-        .sa-slide ul li a.town-link:hover h3 { color: #c41e3a; }
+        .sa-slide ul li a.town-link:hover { background: rgba(0,48,135,0.15); color: #c41e3a; }
+        
         .sa-slide ul li a.town-link .zip-code {
             font-size: 13px; color: #555; margin-top: 6px; padding-left: 5px;
         }
@@ -1220,30 +1222,30 @@
                         </div>
                         <div class="sa-slider-container" id="saSliderContainer">
                             <div class="sa-slide" id="slide-westchester">
-                                <h2>Westchester County Towns We Service</h2>
+                                <h2>Select Westchester County NY Towns We Service</h2>
                                 <ul>
-                                    <li><a href="/ny/ardsley/" class="town-link"><h3>Ardsley</h3><div class="zip-code">ZIP: 10502</div></a></li>
-                                    <li><a href="/ny/bronxville/" class="town-link"><h3>Bronxville</h3><div class="zip-code">ZIP: 10708</div></a></li>
-                                    <li><a href="/ny/dobbs-ferry/" class="town-link"><h3>Dobbs Ferry</h3><div class="zip-code">ZIP: 10522</div></a></li>
-                                    <li><a href="/ny/eastchester/" class="town-link"><h3>Eastchester</h3><div class="zip-code">ZIP: 10709</div></a></li>
-                                    <li><a href="/ny/elmsford/" class="town-link"><h3>Elmsford</h3><div class="zip-code">ZIP: 10523</div></a></li>
-                                    <li><a href="/ny/fairview/" class="town-link"><h3>Fairview</h3><div class="zip-code">ZIP: 10603</div></a></li>
-                                    <li><a href="/ny/harrison/" class="town-link"><h3>Harrison</h3><div class="zip-code">ZIP: 10528</div></a></li>
-                                    <li><a href="/ny/hartsdale/" class="town-link"><h3>Hartsdale</h3><div class="zip-code">ZIP: 10530</div></a></li>
-                                    <li><a href="/ny/hastings-on-hudson/" class="town-link"><h3>Hastings-on-Hudson</h3><div class="zip-code">ZIP: 10706</div></a></li>
-                                    <li><a href="/ny/irvington/" class="town-link"><h3>Irvington</h3><div class="zip-code">ZIP: 10533</div></a></li>
-                                    <li><a href="/ny/larchmont/" class="town-link"><h3>Larchmont</h3><div class="zip-code">ZIP: 10538</div></a></li>
-                                    <li><a href="/ny/mamaroneck/" class="town-link"><h3>Mamaroneck</h3><div class="zip-code">ZIP: 10543</div></a></li>
-                                    <li><a href="/ny/mount-vernon/" class="town-link"><h3>Mount Vernon</h3><div class="zip-code">ZIP: 10550</div></a></li>
-                                    <li><a href="/ny/new-rochelle/" class="town-link"><h3>New Rochelle</h3><div class="zip-code">ZIP: 10801</div></a></li>
-                                    <li><a href="/ny/pelham-manor/" class="town-link"><h3>Pelham Manor</h3><div class="zip-code">ZIP: 10803</div></a></li>
-                                    <li><a href="/ny/rye/" class="town-link"><h3>Rye</h3><div class="zip-code">ZIP: 10580</div></a></li>
-                                    <li><a href="/ny/scarsdale/" class="town-link"><h3>Scarsdale</h3><div class="zip-code">ZIP: 10583</div></a></li>
-                                    <li><a href="/ny/tarrytown/" class="town-link"><h3>Tarrytown</h3><div class="zip-code">ZIP: 10591</div></a></li>
-                                    <li><a href="/ny/valhalla/" class="town-link"><h3>Valhalla</h3><div class="zip-code">ZIP: 10595</div></a></li>
-                                    <li><a href="/ny/village-of-pelham/" class="town-link"><h3>Village of Pelham</h3><div class="zip-code">ZIP: 10803</div></a></li>
-                                    <li><a href="/ny/white-plains/" class="town-link"><h3>White Plains</h3><div class="zip-code">ZIP: 10601</div></a></li>
-                                    <li><a href="/ny/yonkers/" class="town-link"><h3>Yonkers</h3><div class="zip-code">ZIP: 10701</div></a></li>
+                                    <li><a href="/ny/ardsley/" class="town-link">Ardsley</a></li>
+                                    <li><a href="/ny/bronxville/" class="town-link">Bronxville</a></li>
+                                    <li><a href="/ny/dobbs-ferry/" class="town-link">Dobbs Ferry</a></li>
+                                    <li><a href="/ny/eastchester/" class="town-link">Eastchester</a></li>
+                                    <li><a href="/ny/elmsford/" class="town-link">Elmsford</a></li>
+                                    <li><a href="/ny/fairview/" class="town-link">Fairview</a></li>
+                                    <li><a href="/ny/harrison/" class="town-link">Harrison</a></li>
+                                    <li><a href="/ny/hartsdale/" class="town-link">Hartsdale</a></li>
+                                    <li><a href="/ny/hastings-on-hudson/" class="town-link">Hastings-on-Hudson</a></li>
+                                    <li><a href="/ny/irvington/" class="town-link">Irvington</a></li>
+                                    <li><a href="/ny/larchmont/" class="town-link">Larchmont</a></li>
+                                    <li><a href="/ny/mamaroneck/" class="town-link">Mamaroneck</a></li>
+                                    <li><a href="/ny/mount-vernon/" class="town-link">Mount Vernon</a></li>
+                                    <li><a href="/ny/new-rochelle/" class="town-link">New Rochelle</a></li>
+                                    <li><a href="/ny/pelham-manor/" class="town-link">Pelham Manor</a></li>
+                                    <li><a href="/ny/rye/" class="town-link">Rye</a></li>
+                                    <li><a href="/ny/scarsdale/" class="town-link">Scarsdale</a></li>
+                                    <li><a href="/ny/tarrytown/" class="town-link">Tarrytown</a></li>
+                                    <li><a href="/ny/valhalla/" class="town-link">Valhalla</a></li>
+                                    <li><a href="/ny/village-of-pelham/" class="town-link">Village of Pelham</a></li>
+                                    <li><a href="/ny/white-plains/" class="town-link">White Plains</a></li>
+                                    <li><a href="/ny/yonkers/" class="town-link">Yonkers</a></li>
                                 </ul>
                             </div>
                             

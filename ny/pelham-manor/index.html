@@ -406,8 +406,9 @@
         }
         .sa-slide ul li {
             padding: 0; margin: 8px 0; border-radius: 10px;
-            background: rgba(240, 244, 255, .9); transition: all .3s ease; cursor: pointer;
+            background: rgba(240, 244, 255, .9); transition: all .3s ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, .08); break-inside: avoid;
+            pointer-events: none;
         }
         .sa-slide ul li:hover { background: transparent; }
         .sa-slide ul li:hover h3 { color: #c41e3a; }
@@ -423,6 +424,9 @@
             padding: 12px 15px;
             cursor: pointer;
             border-radius: 10px;
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
         }
         .sa-slide ul li a.town-link:hover { background: rgba(26, 26, 46, .12); border-radius: 10px; }
         .sa-slide ul li a.town-link:hover h3 { color: #c41e3a; }
